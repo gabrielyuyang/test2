@@ -3,7 +3,9 @@ FROM ubuntu:14.04
 LABEL version="1.0.0"
 LABEL maintainer="tommylikehu@gmail.com"
 
-ENV TINI_VERSION v0.14.0
+COPY docker-entrypoint.sh /usr/local/bin/
+
+ENV TINI_VERSION v0.18.0
 RUN set -x \
   && apt-get update \
   && apt-get install -y ca-certificates curl --no-install-recommends \
@@ -24,4 +26,7 @@ ADD update-exim4.conf.conf /etc/exim4/
 RUN sudo update-exim4.conf
 
 EXPOSE 25
+
+ENTRYPOINT ["docker-entrypoint.sh"]
+
 CMD ["tini", "--", "exim", "-bd", "-v"]
