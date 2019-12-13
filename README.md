@@ -2,7 +2,7 @@
 
 ### Brief Introduction
 
-This repository houses the scripts for community infrastructure, you are welcome to join us. any contribution will be appreciated.
+This repository houses the scripts for community infrastructure. You are welcome to join us, and any contribution will be appreciated.
 
 ### Structure
 ```
