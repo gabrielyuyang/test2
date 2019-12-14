@@ -20,7 +20,7 @@ Currently, all systems are running in HuaweiCloud CCE engine as container, and w
 
 ### Mail
 
-Our mail list system is based on (Mailman + Exim4 + Postgres), thanks to [maxking](https://github.com/maxking/docker-mailman)
+Our mail list system is based on (Mailman + Exim4 + Postgres). Thanks to [maxking](https://github.com/maxking/docker-mailman)
 and [inifum](https://github.com/infinum/exim4-docker), our most of the docker files are built on their version.
 
 ### License
